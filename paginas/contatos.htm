@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Belle Cafe</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <img src="../imagens/banner/bannerCafeteria.jpg" alt="Banner" height="300" width="100%" class = "banner">
+        <img src = "../imagens/logo/logo.png" alt = "logo" height="150" width="150" class = "logo">
+    </header>
+
+    <nav class = "menu">
+        <ul>
+            <a href = "../index.htm"><li><button>Menu</button></li></a>
+            <a href = "ofertas.htm"><li><button>Ofertas</button></li></a>
+            <a href = "receitas.htm"><li><button>Receitas do mês</button></li></a>
+            <a href = "sobreNos.htm"><li><button>Sobre nós</button></li></a>
+            <a href = "lojas.htm"><li><button>Nossas lojas</button></li></a>
+            <a href = "contatos.htm"><li><button>Contato</button></li></a>
+            <a href = "sustentabilidade.htm"><li><button>Sustentabilidade</button></li></a>
+        </ul>
+    </nav>
+
+    <div class = "formulario">
+        <h1>Contato</h1>
+        <p>Complete suas informações</p>
+      </div>
+      <form>
+        <fieldset class="grupo">
+          <div class="campo">
+          <label for="nome"><strong>Nome</strong></label>
+          <input type="text" name="nome" id="nome" required></input>
+          </div>
+          <div class="campo">
+             <label for="sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+          </fieldset>
+      <br>
+      <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+          <input type="email" name="email" id="email" required>
+      </div>
+      <br>
+      <div class="campo">
+        <label><strong>Que tipo de café você gosta?</strong></label>
+        <label>
+        <input type="radio" nome="devweb" value="frontend" checked>Café preto
+        </input>
+        </label>
+      <label>
+      <input type="radio" nome="devweb" value="backend">Café americano
+        </input>
+      </label>
+      <label>
+      <input type="radio" nome="devweb" value="fullstack">Cappucino
+        </input>
+    </label>
+        </div>
+    <br>
+    <div class="campo">
+      <label for="senioridade"><strong> Você é muito calmo? </strong></label>
+      <select id="senioridade">
+        <option selected disable value="">Selecione</option>
+        <option>Com certeza</option>
+            <option>Sim</option>
+            <option>Não</option> </select>
+     
+    </div>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label><strong>Voce é :</strong></label><br><br>
+        <input type="radio" id="tecnologia1" value="HTML" name = "radio">
+        <label type="tecnologia1">Introvertido</label>
+         <input type="radio" id="tecnologia2" name = "radio" value="CSS">
+        <label type="tecnologia2">Extrovertido</label>
+      </div>
+      </fieldset>
+    <button class="botao" type="submit">Concluir</button>
+        </form>
